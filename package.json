@@ -1,0 +1,55 @@
+{
+  "name": "sec-daily-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for the SEC Daily API — gives AI assistants real-time access to SEC EDGAR filings, news, and company data.",
+  "type": "module",
+  "bin": {
+    "sec-daily-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "sec-daily-api": "^0.4.0",
+    "zod": "^3.23.0",
+    "zod-to-json-schema": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "sec",
+    "edgar",
+    "filings",
+    "10-k",
+    "10-q",
+    "8-k",
+    "insider-trading",
+    "fintech",
+    "ai",
+    "claude",
+    "openai",
+    "cursor",
+    "financial-data"
+  ],
+  "homepage": "https://www.secdailyapi.com",
+  "license": "Apache-2.0",
+  "author": "GoodTech LLC",
+  "publishConfig": {
+    "access": "public"
+  }
+}
