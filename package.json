@@ -1,6 +1,6 @@
 {
   "name": "sec-daily-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MCP server for the SEC Daily API — gives AI assistants real-time access to SEC EDGAR filings, news, and company data.",
   "type": "module",
   "bin": {

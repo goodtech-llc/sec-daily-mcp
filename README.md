@@ -109,6 +109,7 @@ Retrieve SEC press releases and market news.
 - Pricing: [secdailyapi.com/pricing](https://www.secdailyapi.com/pricing)
 - Dashboard: [secdailyapi.com/dashboard](https://www.secdailyapi.com/dashboard)
 - Node.js SDK: [sec-daily-api on npm](https://www.npmjs.com/package/sec-daily-api)
+- Python SDK: [sec-daily-api on PyPI](https://pypi.org/project/sec-daily-api/)
 
 ---
 
