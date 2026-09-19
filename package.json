@@ -1,6 +1,6 @@
 {
   "name": "sec-daily-mcp",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "MCP server for the SEC Daily API — gives AI assistants real-time access to SEC EDGAR filings, news, and company data.",
   "type": "module",
   "bin": {
@@ -16,13 +16,13 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.0.0",
-    "sec-daily-api": "^0.4.0",
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "sec-daily-api": "^0.4.2",
     "zod": "^3.23.0",
     "zod-to-json-schema": "^3.23.0"
   },
   "devDependencies": {
-    "@types/node": "^25.6.0",
+    "@types/node": "^25.9.8",
     "tsup": "^8.0.0",
     "typescript": "^5.4.0"
   },
