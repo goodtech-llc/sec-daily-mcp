@@ -83,7 +83,7 @@ const GetNewsSchema = z.object({
 // ---------------------------------------------------------------------------
 
 const server = new Server(
-  { name: "sec-daily-mcp", version: "0.1.0" },
+  { name: "sec-daily-mcp", version: "0.1.2" },
   { capabilities: { tools: {} } },
 );
 
