@@ -31,9 +31,46 @@ Edit `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS) o
 
 Restart Claude Desktop. The SEC Daily tools will be available automatically.
 
+### Claude Code — one command
+
+Claude Code can install this as a plugin, which adds the hosted server *and* a
+skill that tells Claude how the data behaves (paging, filing date versus period
+of report, and which limits come from your plan):
+
+```shell
+/plugin install sec-daily --marketplace goodtech-llc/insider-trades-mcp
+```
+
+On Claude Code older than 2.1.275, add the marketplace first:
+
+```shell
+/plugin marketplace add goodtech-llc/insider-trades-mcp
+/plugin install sec-daily@goodtech
+```
+
+The `goodtech` marketplace lists every GoodTech plugin; it lives in the Insider
+Trades repository. If you already added it for Insider Trades, run
+`/plugin marketplace update goodtech` and install.
+
+The install asks for your API key and keeps it in your system's secure
+credential store, not in a settings file. To change it later, run `/plugin`,
+open SEC Daily on the **Installed** tab and choose **Configure**.
+
+The plugin points at the hosted server at `https://api.secdailyapi.com/mcp`, so
+there is nothing to install locally. You can also add the hosted server
+directly, without the plugin or its skill:
+
+```shell
+claude mcp add --transport http sec-daily https://api.secdailyapi.com/mcp \
+  --header "x-api-key: $SEC_DAILY_API_KEY"
+```
+
 ### Cursor / Windsurf / Other MCP Clients
 
-Add the same block under your tool's MCP server configuration. The format is identical across all MCP-compatible clients.
+Clients that connect to remote MCP servers can use the hosted URL
+`https://api.secdailyapi.com/mcp` with your key in an `x-api-key` header.
+Clients that run servers as a local command take the same block as Claude
+Desktop above.
 
 ---
 

@@ -47,6 +47,13 @@
     "financial-data"
   ],
   "homepage": "https://www.secdailyapi.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goodtech-llc/sec-daily-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/goodtech-llc/sec-daily-mcp/issues"
+  },
   "license": "Apache-2.0",
   "author": "GoodTech LLC",
   "publishConfig": {
