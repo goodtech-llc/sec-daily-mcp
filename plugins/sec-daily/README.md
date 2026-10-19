@@ -39,6 +39,9 @@ SEC Daily on the **Installed** tab and choose **Configure**.
 Requests go to the hosted server at `https://api.secdailyapi.com/mcp` and count
 toward your API plan. Nothing runs locally.
 
+The plugin works in Claude Code today. Cowork and the Claude apps cannot ask for
+a key, so the plugin's server stays off there until sign-in is available.
+
 ## Things to ask
 
 - "What did Nvidia say about risks in its latest 10-K?"

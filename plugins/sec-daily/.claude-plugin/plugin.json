@@ -3,12 +3,27 @@
   "displayName": "SEC Daily",
   "version": "0.1.0",
   "description": "SEC EDGAR filings for US public companies: search 10-K, 10-Q, 8-K and every other form, read a filing's text, look up companies, and follow SEC news.",
-  "author": { "name": "GoodTech LLC", "url": "https://www.secdailyapi.com" },
+  "author": {
+    "name": "GoodTech LLC",
+    "url": "https://www.secdailyapi.com"
+  },
   "homepage": "https://www.secdailyapi.com/docs/examples/mcp",
+  "documentationUrl": "https://www.secdailyapi.com/docs/examples/mcp",
+  "supportUrl": "https://github.com/goodtech-llc/sec-daily-mcp/issues",
   "repository": "https://github.com/goodtech-llc/sec-daily-mcp",
   "license": "Apache-2.0",
   "privacyPolicyUrl": "https://www.secdailyapi.com/privacy",
-  "keywords": ["sec", "edgar", "filings", "10-k", "8-k", "stocks", "finance"],
+  "termsOfServiceUrl": "https://www.secdailyapi.com/terms",
+  "icon": "./.claude-plugin/icon.png",
+  "keywords": [
+    "sec",
+    "edgar",
+    "filings",
+    "10-k",
+    "8-k",
+    "stocks",
+    "finance"
+  ],
   "userConfig": {
     "api_key": {
       "type": "string",
