@@ -25,7 +25,7 @@ The plugin adds five tools and a skill:
 Install from the GoodTech marketplace in Claude Code:
 
 ```shell
-/plugin install sec-daily --marketplace goodtech-llc/insider-trades-mcp
+/plugin install sec-daily --marketplace goodtech-llc/sec-daily-mcp
 ```
 
 You need an SEC Daily API key. Free keys are available from your

@@ -38,19 +38,20 @@ skill that tells Claude how the data behaves (paging, filing date versus period
 of report, and which limits come from your plan):
 
 ```shell
-/plugin install sec-daily --marketplace goodtech-llc/insider-trades-mcp
+/plugin install sec-daily --marketplace goodtech-llc/sec-daily-mcp
 ```
 
 On Claude Code older than 2.1.275, add the marketplace first:
 
 ```shell
-/plugin marketplace add goodtech-llc/insider-trades-mcp
+/plugin marketplace add goodtech-llc/sec-daily-mcp
 /plugin install sec-daily@goodtech
 ```
 
-The `goodtech` marketplace lists every GoodTech plugin; it lives in the Insider
-Trades repository. If you already added it for Insider Trades, run
-`/plugin marketplace update goodtech` and install.
+This repository is the `goodtech` marketplace, which lists every GoodTech
+plugin; the Insider Trades repository carries the same catalog. If you already
+added it from there, either source works and your installed plugins keep
+working.
 
 The install asks for your API key and keeps it in your system's secure
 credential store, not in a settings file. To change it later, run `/plugin`,
