@@ -1,7 +1,7 @@
 {
   "name": "sec-daily",
   "displayName": "SEC Daily",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "SEC EDGAR filings for US public companies: search 10-K, 10-Q, 8-K and every other form, read a filing's text, look up companies, and follow SEC news.",
   "author": {
     "name": "GoodTech LLC",
@@ -23,14 +23,5 @@
     "8-k",
     "stocks",
     "finance"
-  ],
-  "userConfig": {
-    "api_key": {
-      "type": "string",
-      "title": "SEC Daily API key",
-      "description": "From your dashboard at https://www.secdailyapi.com/dashboard (free keys available). Stored in your system's secure credential store.",
-      "sensitive": true,
-      "required": true
-    }
-  }
+  ]
 }

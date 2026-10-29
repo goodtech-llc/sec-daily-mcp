@@ -2,10 +2,7 @@
   "mcpServers": {
     "sec-daily": {
       "type": "http",
-      "url": "https://api.secdailyapi.com/mcp",
-      "headers": {
-        "x-api-key": "${user_config.api_key}"
-      }
+      "url": "https://api.secdailyapi.com/mcp"
     }
   }
 }

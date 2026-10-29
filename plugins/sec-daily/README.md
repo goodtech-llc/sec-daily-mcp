@@ -22,25 +22,27 @@ The plugin adds five tools and a skill:
 
 ## Setup
 
-Install from the GoodTech marketplace in Claude Code:
+In Claude Code:
 
 ```shell
 /plugin install sec-daily --marketplace goodtech-llc/sec-daily-mcp
 ```
 
-You need an SEC Daily API key. Free keys are available from your
-[dashboard](https://www.secdailyapi.com/dashboard); paid plans add history and
-higher limits.
+Nothing to configure. The first time Claude uses a tool, it asks you to sign in
+to SEC Daily (the same account as the website; creating one takes a minute). If
+you don't have an API key yet, one is created for you on your plan, free unless
+you've upgraded.
 
-Claude Code asks for the key when you install the plugin and keeps it in your
-system's secure credential store. To change it later, run `/plugin`, open
-SEC Daily on the **Installed** tab and choose **Configure**.
+In Claude Code, if the sign-in window does not open by itself, run `/mcp`,
+choose the SEC Daily server and pick **Authenticate**. In Cowork and the Claude
+apps, connect it from the plugin's **Connectors** tab.
 
 Requests go to the hosted server at `https://api.secdailyapi.com/mcp` and count
-toward your API plan. Nothing runs locally.
+toward your plan. Nothing runs locally.
 
-The plugin works in Claude Code today. Cowork and the Claude apps cannot ask for
-a key, so the plugin's server stays off there until sign-in is available.
+**Prefer an API key?** Add the server yourself instead of using the plugin:
+`claude mcp add --transport http sec-daily https://api.secdailyapi.com/mcp --header "x-api-key: YOUR_KEY"`
+(keys at your [dashboard](https://www.secdailyapi.com/dashboard)).
 
 ## Things to ask
 
@@ -51,8 +53,8 @@ a key, so the plugin's server stays off there until sign-in is available.
 
 ## Notes
 
-This is filing data, not investment advice. Free keys reach back one year;
-paid plans reach back further.
+This is filing data, not investment advice. The free plan reaches back one
+year; paid plans reach back further.
 
 Support: support@secdailyapi.com · [Documentation](https://www.secdailyapi.com/docs) ·
 License: Apache-2.0

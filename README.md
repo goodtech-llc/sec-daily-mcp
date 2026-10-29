@@ -53,13 +53,17 @@ plugin; the Insider Trades repository carries the same catalog. If you already
 added it from there, either source works and your installed plugins keep
 working.
 
-The install asks for your API key and keeps it in your system's secure
-credential store, not in a settings file. To change it later, run `/plugin`,
-open SEC Daily on the **Installed** tab and choose **Configure**.
+There is no key to paste: the first time Claude uses a tool, it asks you to sign
+in to SEC Daily, and if you don't have an API key yet, one is created for you.
+If the sign-in window does not open by itself, run `/mcp`, choose the SEC Daily
+server and pick **Authenticate**. The same plugin works in Cowork and the Claude
+apps, where you connect it from the plugin's Connectors tab.
 
 The plugin points at the hosted server at `https://api.secdailyapi.com/mcp`, so
-there is nothing to install locally. You can also add the hosted server
-directly, without the plugin or its skill:
+there is nothing to install locally.
+
+To use an API key instead of signing in, add the hosted server directly, without
+the plugin or its skill:
 
 ```shell
 claude mcp add --transport http sec-daily https://api.secdailyapi.com/mcp \
