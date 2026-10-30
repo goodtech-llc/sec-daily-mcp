@@ -1,6 +1,6 @@
 ---
 name: sec-filings-data
-description: How to answer questions from SEC EDGAR filings correctly with the sec-daily tools: finding the right company and filing, paging, reading a long filing's text, and the ways a query returns a confident wrong answer. Use whenever answering questions about a company's 10-K, 10-Q, 8-K, S-1, proxy or other SEC filings, what a filing says, when it was filed, or SEC press and enforcement news.
+description: "How to answer questions from SEC EDGAR filings correctly with the sec-daily tools: finding the right company and filing, paging, reading a long filing's text, and the ways a query returns a confident wrong answer. Use whenever answering questions about a company's 10-K, 10-Q, 8-K, S-1, proxy or other SEC filings, what a filing says, when it was filed, or SEC press and enforcement news."
 ---
 
 # Working with SEC filings
